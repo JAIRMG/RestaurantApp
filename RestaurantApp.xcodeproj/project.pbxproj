@@ -15,7 +15,6 @@
 		053535CF21DE74C7009C382B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535CE21DE74C7009C382B /* BaseView.swift */; };
 		053535D421DE760F009C382B /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535D321DE760F009C382B /* DetailsFoodView.swift */; };
 		053535D621DE7ADD009C382B /* DetailsFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535D521DE7ADD009C382B /* DetailsFoodViewController.swift */; };
-		053535D921DE816A009C382B /* RestaurantTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535D821DE816A009C382B /* RestaurantTableTableViewController.swift */; };
 		053535DC21DE8196009C382B /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535DB21DE8196009C382B /* RestaurantTableViewCell.swift */; };
 		053535E021DEBF0F009C382B /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535DF21DEBF0F009C382B /* LocationView.swift */; };
 		053535E221DEC008009C382B /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535E121DEC008009C382B /* LocationViewController.swift */; };
@@ -23,6 +22,7 @@
 		053535E721E65C15009C382B /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 053535E621E65C15009C382B /* PodFile */; };
 		053535E921E662B9009C382B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535E821E662B9009C382B /* NetworkService.swift */; };
 		053535EB21E6B899009C382B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535EA21E6B899009C382B /* Models.swift */; };
+		0539F1CC21F68BD9008624EF /* RestaurantTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053535D821DE816A009C382B /* RestaurantTableTableViewController.swift */; };
 		21BA8E75F2F6E19441E6D8DF /* Pods_RestaurantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C4FEC2E46F30EC8140E77 /* Pods_RestaurantApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -307,10 +307,10 @@
 				053535E921E662B9009C382B /* NetworkService.swift in Sources */,
 				053535CF21DE74C7009C382B /* BaseView.swift in Sources */,
 				053535E021DEBF0F009C382B /* LocationView.swift in Sources */,
+				0539F1CC21F68BD9008624EF /* RestaurantTableTableViewController.swift in Sources */,
 				053535EB21E6B899009C382B /* Models.swift in Sources */,
 				053535D421DE760F009C382B /* DetailsFoodView.swift in Sources */,
 				053535D621DE7ADD009C382B /* DetailsFoodViewController.swift in Sources */,
-				053535D921DE816A009C382B /* RestaurantTableTableViewController.swift in Sources */,
 				053535BE21DD1E34009C382B /* ViewController.swift in Sources */,
 				053535E221DEC008009C382B /* LocationViewController.swift in Sources */,
 				053535DC21DE8196009C382B /* RestaurantTableViewCell.swift in Sources */,
