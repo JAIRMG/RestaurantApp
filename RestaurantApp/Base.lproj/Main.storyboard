@@ -190,7 +190,6 @@
                                     <outlet property="makerImageView" destination="3TF-JA-Pex" id="UUa-i3-Qhp"/>
                                     <outlet property="restaurantImageView" destination="cg7-Wq-HMQ" id="ZfS-7B-H21"/>
                                     <outlet property="restaurantNameLabel" destination="EEV-Wp-0zY" id="fno-x1-wWm"/>
-                                    <segue destination="jca-25-rS3" kind="show" id="G0u-lp-RXd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -208,24 +207,24 @@
         <!--Title-->
         <scene sceneID="klu-NP-l0p">
             <objects>
-                <viewController id="jca-25-rS3" customClass="DetailsFoodViewController" customModule="RestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="jca-25-rS3" customClass="DetailsFoodViewController" customModule="RestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="055-sc-lZU" customClass="DetailsFoodView" customModule="RestaurantApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-c4-2eh">
-                                <rect key="frame" x="0.0" y="64" width="375" height="960"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="1004"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vpp-mK-Edm">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="960"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uJG-OL-Bqv">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uJG-OL-Bqv">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="1aM-et-1lq"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fTF-le-L8G">
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fTF-le-L8G">
                                                     <size key="itemSize" width="50" height="50"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -350,7 +349,7 @@
                                 </constraints>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-uy-pod">
-                                <rect key="frame" x="168" y="277" width="39" height="37"/>
+                                <rect key="frame" x="168" y="233" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="currentPageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -377,6 +376,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="W6s-eg-OsF"/>
                     <size key="freeformSize" width="375" height="1024"/>
+                    <connections>
+                        <outlet property="detailsFoodView" destination="055-sc-lZU" id="43f-oA-HXK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUA-lb-QId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
