@@ -108,7 +108,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 print("Service request \n\n \(try? JSONSerialization.jsonObject(with: response.data, options: []))")
                 let root = try? strongSelf.jsonDecoder.decode(Root.self, from: response.data)
-                print("root: \n\n \(root)")
                 let viewModels = root?.businesses.compactMap(RestaurantListViewModel.init)
                 .sorted(by: {$0.distance < $1.distance })
                 
