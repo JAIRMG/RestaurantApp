@@ -4,5 +4,7 @@ use_frameworks!
 target 'RestaurantApp' do
 pod 'AlamofireImage'
 pod 'Moya'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 
 end
